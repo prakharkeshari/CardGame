@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 id="heading">CardGame</h1>
+    <div class="content">
+        <div class="playerName-cards-wrapper">
+            <div class="player-name-wrapper">
+                <h3>Palyer 1</h3>
+                <h3 id="p1Name">Name : N/A</h3>
+            </div>
+            <div class="cards">
+                <img src="images/cardBack.jpg" alt="None" id="p1c1" class="cardsImage">
+                <img src="images/cardBack.jpg" alt="None" id="p1c2" class="cardsImage">
+                <img src="images/cardBack.jpg" alt="None" id="p1c3" class="cardsImage">
+            </div>
+            <div class="container">
+                <button class="btnShowHighestCard" onclick="findHighestCardPlayer1()">show Highest Card</button>
+            </div>
+            <div class="highestCard-PointsEarned">
+                <h3 >Highest Card</h3>
+                <h3 id="P1points" class="points">Points earned</h3>
+            </div>
+            <img src="" id="result1"  class="resultCard">
+        </div>
+
+        <div class="playerName-cards-wrapper">
+            <div class="player-name-wrapper">
+                <h3>Palyer 2</h3>
+                <h3 id="p2Name">Name : N/A</h3>
+            </div>
+            <div class="cards">
+                <img src="images/cardBack.jpg" alt="None" id="p2c1"  class="cardsImage">
+                <img src="images/cardBack.jpg" alt="None" id="p2c2"  class="cardsImage">
+                <img src="images/cardBack.jpg" alt="None" id="p2c3"  class="cardsImage">
+            </div>
+            <div class="container">
+                <button class="btnShowHighestCard" onclick="findHighestCardPlayer2()">show Highest Card</button>
+            </div>
+            <div class="highestCard-PointsEarned">
+                <h3 >Highest Card</h3>
+                <h3 id="P2points" class="points">Points earned</h3>
+            </div>
+            <img src="" id="result2" class="resultCard">
+        </div>
+    </div>
+    <h2 class="winner"></h2>
+    <script src="myScript.js"></script>
+</body>
+
+</html>

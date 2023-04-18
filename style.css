@@ -1,0 +1,131 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: green;
+}
+#heading{
+    font-weight: 700;
+    font-family: 'Comfortaa', cursive;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: 20px;
+   
+}
+.player-name-wrapper{
+    display: flex;
+    justify-content:space-between;
+    margin-top: 7px;
+    margin-bottom: 20px;
+
+}
+.player-name-wrapper h3{
+    font-weight: 300;
+    font-family: 'Comfortaa', cursive;
+    color: rgb(255, 255, 255);
+    
+}
+.cards img{
+    border-radius: 2%;
+    margin: 2px;
+    width: 160px;
+    height: 240px;
+}
+.content{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 45px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    
+}
+.btnShowHighestCard{
+
+    font-family: 'Comfortaa', cursive;
+    padding: 7px;
+    border-radius: 5px;
+    
+    
+}
+.highestCard-PointsEarned{
+    display: flex;
+    justify-content:space-between;
+    font-family: 'Comfortaa', cursive;
+    margin-top: 30px;
+    
+}
+.highestCard-PointsEarned h3{
+    color: rgb(255, 255, 255);
+}
+.highestCard-PointsEarned .points{
+    color: rgb(235, 59, 59);
+}
+.resultCard{
+    border-radius: 2%;
+    display: block;
+    margin: 2px;
+    width: 160px;
+    height: 240px;
+    visibility: hidden;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    
+}
+.winner{
+    text-align: center;
+    font-family:'Comfortaa', cursive;
+    color: rgb(255, 255, 255);
+    margin-bottom: 67px;
+    margin-top: 63px;
+}
+
+/*  Responive Design */
+
+@media only screen and (max-width: 1051px) {
+    .highestCard-PointsEarned{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .content{
+        display: block;
+        
+    }
+    .cards{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .player-name-wrapper{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .playerName-cards-wrapper{
+        margin-top: 30px;
+    }
+    .container{
+        margin-top: 30px;
+    }
+
+  }
+  
+@media only screen and (max-width: 560px) {
+    .cards{
+       
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+  
+}
+@media only screen and (max-width: 300px) {
+    .player-name-wrapper{
+        flex-direction: column;
+    }
+}
