@@ -40,11 +40,12 @@ function findHighestCardPlayer1(){
        
         let cardresult;
         for(let i=0;i<3;i++){
-            if(player1MaxScore<score[i]){
+            if(player1MaxScore<=score[i]){
                 player1MaxScore=score[i];
                 cardresult=card[i];
             }
         }
+       
         document.getElementById("P1points").innerHTML=player1MaxScore;
         document.getElementById("result1").style.visibility="visible"
         document.getElementById("result1").setAttribute("src",cardresult);
@@ -54,7 +55,6 @@ function findHighestCardPlayer1(){
 
 }
 function findHighestCardPlayer2(){
-    
     if(count<6){
     alert("first each player flip their all the cards");
     }
@@ -67,6 +67,7 @@ function findHighestCardPlayer2(){
                 cardresult=card[i];
             }
         }
+        
         document.getElementById("P2points").innerHTML=player2MaxScore;
         document.getElementById("result2").style.visibility="visible";
         document.getElementById("result2").setAttribute("src",cardresult);
