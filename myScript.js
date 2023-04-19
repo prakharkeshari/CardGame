@@ -54,11 +54,12 @@ function findHighestCardPlayer1(){
 
 }
 function findHighestCardPlayer2(){
+    
     if(count<6){
     alert("first each player flip their all the cards");
     }
     else{
-       
+        findHighestCardPlayer1();
         let cardresult;
         for(let i=3;i<6;i++){
             if(player2MaxScore<score[i]){
